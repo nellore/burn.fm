@@ -1,0 +1,386 @@
+/*
+ * burn.fm css for desktop devices
+ * http://burn.fm
+ *
+ * Copyright (c) 2012-2013 Abhinav Nellore
+ * Licensed under the MIT License. See LICENSE.
+ */
+
+@font-face {
+    font-family: 'RalewayThin';
+    src: url('raleway_thin-webfont.eot');
+    src: url('raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway_thin-webfont.woff') format('woff'),
+         url('raleway_thin-webfont.ttf') format('truetype'),
+         url('raleway_thin-webfont.svg#RalewayThin') format('svg');
+font-weight:normal;font-style:normal;font-variant:normal;
+
+}
+
+@font-face {
+    font-family: 'HeydingsControlsRegular';
+    src: url('heydings_controls-webfont.eot');
+    src: url('heydings_controls-webfont.eot?#iefix') format('embedded-opentype'),
+         url('heydings_controls-webfont.woff') format('woff'),
+         url('heydings_controls-webfont.ttf') format('truetype'),
+         url('heydings_controls-webfont.svg#HeydingsControlsRegular') format('svg');
+font-weight:normal;font-style:normal;font-variant:normal;
+
+}
+
+@font-face {
+    font-family: 'FunctionProBook';
+    src: url('functionpro-book-webfont.eot');
+    src: url('functionpro-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('functionpro-book-webfont.woff') format('woff'),
+         url('functionpro-book-webfont.ttf') format('truetype'),
+         url('functionpro-book-webfont.svg#FunctionProBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('modernpics-webfont.eot');
+    src: url('modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('modernpics-webfont.woff') format('woff'),
+         url('modernpics-webfont.ttf') format('truetype'),
+         url('modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+  background: #0b0f11;
+    font-family: "RalewayThin";
+    font-size: 1em;
+      -webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+#topcontainer {
+  position: fixed;
+  width: 100%;
+  height: 7.5em;
+  top: 0;
+  left: 0;
+  background: #0b0f11;
+  /*opacity stuff*/
+  
+  /*zoom: 1;
+  filter: alpha(opacity=90);
+  opacity: 0.90;*/
+  
+  background: -moz-linear-gradient(top,  rgba(11,15,17,0.85) 0%, rgba(11,15,17,0.85) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(11,15,17,0.85)), color-stop(100%,rgba(11,15,17,0.85))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0.85) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0.85) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0.85) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0.85) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90b0f11', endColorstr='#d90b0f11',GradientType=0 ); /* IE6-9 */
+
+  
+  padding: 2em;
+  padding-top: 0.3em;
+  padding-left: 0.7em;
+  padding-bottom: 6em;
+  
+  z-index: 1;
+
+}
+#transition {
+position: fixed;
+  height: 1.5em;
+  width: 100%;
+
+  top: 13.8em;
+  left: 0;
+  z-index: 1;
+  
+background: -moz-linear-gradient(top,  rgba(11,15,17,0.85) 0%, rgba(11,15,17,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(11,15,17,0.85)), color-stop(100%,rgba(11,15,17,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(11,15,17,0.85) 0%,rgba(11,15,17,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90b0f11', endColorstr='#000b0f11',GradientType=0 ); /* IE6-9 */
+
+}
+#loading {
+  color: #e31d76;
+  padding: 0.89em;
+  padding-top: 0.75em;
+  padding-bottom: 1.5em;
+  font-size: 4.5em;
+  margin:0 auto;
+}
+#top {
+  position: absolute;
+  width: 15em;
+  font-size: 4.5em;
+  top: 0.5em;
+}
+#content {
+position: relative;
+  z-index: 0;
+  color: white;
+  /*overflow: auto;*/
+  padding-top: 17em;
+  left: -2.2em;
+  font-size: 80%;
+}
+#brand {
+  color: #e31d76;
+}
+#hash {
+  color: #00b3dc;
+}
+a {
+  text-decoration: none;
+}
+#on {
+  color: white;
+  text-decoration: underline;
+}
+#off {
+  color: gray;
+}
+.icons {
+  position: relative;
+  left: .1em;
+  top: .1em;
+}
+#twitter {
+  position: relative;
+  left: .19em;
+  top: .1em;
+}
+.item {
+  font-family: "FunctionProBook";
+  font-size: 0.7em;
+  cursor: hand;
+  cursor: pointer;
+  /*display: inline;*/
+}
+.title {
+  font-size: 2.5em;
+}
+.artist {
+  color: #e31d76;
+  font-size: 2em;
+}
+.album {
+  color: #00b3dc;
+  font-size: 2em;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  font-size: 0.65em;
+  font-family: "FunctionProBook";
+}
+.select {
+  font-size: 1em;
+}
+#psa {
+	font-family: "FunctionProBook";
+	position: relative;
+	left: 5em;
+	font-size: 2em;
+	text-align: justify;
+	width: 27em;
+}
+.delete {
+  font-family: "HeydingsControlsRegular";
+  font-size: 2.5em;
+  padding-right: 0.3em;
+cursor: pointer;
+cursor: hand;
+}
+
+.notitle {
+  border: 1px solid #e31d76;
+  border-right: none;
+  padding: 0;
+}
+
+.notitle .ui-dialog-titlebar {
+  display: none;
+}
+
+.addalbum {
+  font-family: "ModernPictogramsNormal";
+  color: #00b3dc;
+  font-size: 2.5em;
+  padding-right: 0.3em;
+cursor: pointer;
+cursor: hand;
+}
+.addartist {
+  font-family: "ModernPictogramsNormal";
+  color: #e31d76;
+  font-size: 2.5em;
+  padding-right: 0.3em;
+cursor: pointer;
+cursor: hand;
+}
+.sort {
+  font-family: "HeydingsControlsRegular";
+  font-size: 2.5em;
+  padding-right: 0.3em;
+cursor: move;
+}
+#song {
+  font-family: "FunctionProBook";
+  padding: 0.3em;
+  /*padding-top: 0.4em;*/
+  font-size: 2em;
+  width: 17em;
+  border: 2px solid gray;
+}
+#songcontainer {
+  position: absolute;
+  top: 8em;
+  left: 16em;
+}
+#tubecontainer {
+  position: fixed;
+  top: 5em;
+  right: -16em;
+  height: 12em;
+  width: 16em;
+  background: #0b0f11;
+  border: 1px solid #e31d76;
+  border-right: 0;
+  z-index: 1001;
+}
+#tube {
+  height: 100%;
+  width: 100%;
+}
+#belowflick {
+  color: white;
+  position: relative;
+  right: -5em;
+  top: -2px;
+  border: none;
+  padding: 0.2em;
+  padding-top: none;
+  cursor: pointer;
+  cursor: hand;
+}
+#fail {
+  position: relative;
+  background: #0b0f11;
+  font-family: "FunctionProBook";
+  left: 1em;
+  bottom: 0.9em;
+}
+#ytpowerimg {
+  background: #0b0f11;
+}
+#insertionpoint {
+  padding-left: 3.33em;  
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+#addheretext {
+  font-size: 2.5em;
+  color: #e31d76;
+  cursor: default;
+}
+#facebook,#twitter,#stumbleupon {
+  cursor: pointer;
+  cursor: hand;
+}
+#stumbleupon {
+  position: relative;
+  top: 0.08em;
+  padding-right: 0.08em;
+}
+#loop {
+    position: absolute;
+      font-size: 1.5em;
+
+    top: 6.6em;
+    left: 5.9em;
+    color: #00b3dc;
+  cursor: pointer;
+  cursor: hand;
+}
+#shuffle {
+position: absolute;
+  font-size: 1.5em;
+
+    top: 6.6em;
+    left:2.7em;
+  color: #e31d76;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#randos {
+font-family: "FunctionProBook";
+position: absolute;
+  white-space: nowrap;
+left: 15.9em;
+top: 12.3em;
+color: gray;
+cursor: pointer;
+  cursor: hand;
+}
+
+.itunes {
+  color: gray;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.nobr {
+  white-space: nowrap;
+}
+
+#randoartists {
+position: absolute;
+font-family: "FunctionProBook";
+  white-space: nowrap;
+top: 1em;
+  color: gray;
+  cursor: pointer;
+  cursor: hand;
+}
+#list li {
+  font-size: 1em;
+  text-indent: -8em;
+  padding-left: 8em;
+}
+#newrandom {
+  color: white;
+  position: absolute;
+  left: 1em;
+  top: 7em;
+  font-size: 1em;
+}
+#visibility {
+   color: gray;
+   text-decoration: none;
+   font-family: "FunctionProBook";
+   position: relative;
+   left: 0.5em;
+}
+#new {
+  cursor: pointer;
+  cursor: hand;
+}
+
+#random {
+  cursor: pointer;
+  cursor: hand;
+}
