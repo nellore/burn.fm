@@ -2,7 +2,7 @@
  * main script for burn.fm
  * http://burn.fm
  *
- * Copyright (c) 2012-2013 Abhinav Nellore
+ * Copyright (c) 2012-2015 Abhinav Nellore
  * Licensed under the MIT License. See LICENSE.
  */
 
